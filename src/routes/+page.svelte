@@ -111,6 +111,15 @@
 	<h2>Du hast verloren</h2>
 {/if}
 
+<button
+	class="reset"
+	onclick={() => {
+		round = 0;
+		score = 0;
+		showing= false
+	}}>Zurücksetzen</button
+>
+
 <style>
 	h1,
 	h2 {
@@ -173,5 +182,16 @@
 	p {
 		font-family: Arial, Helvetica, sans-serif;
 		text-align: center;
+	}
+
+	.reset {
+		display: block;
+		border: #32a840 2px solid;
+		background-color: white;
+		margin: 20px auto;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 20px;
+		padding: 10px;
+		border-radius: 10px;
 	}
 </style>
