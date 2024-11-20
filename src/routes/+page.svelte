@@ -70,6 +70,7 @@
 <h2>Score: {score}</h2>
 
 {#if round < rounds.length}
+	<h2>{rounds[round].title}</h2>
 	<img src={rounds[round].img} alt="" />
 	{#if !showing}
 		<dv class="container">
@@ -116,7 +117,7 @@
 	onclick={() => {
 		round = 0;
 		score = 0;
-		showing= false
+		showing = false;
 	}}>Zurücksetzen</button
 >
 
